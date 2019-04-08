@@ -4,33 +4,23 @@
 
 <hr>
 
-<!-- Form user start -->
 <form action="/update_user/<%= @user.id %>" method="post">
-<!-- Form user end -->
 
-  <!-- Label and input for username start -->
   <div class="form-group">
     <label for="username">
       Username
     </label>
 
-    <!-- Input for username start -->
     <input type="text" id="username" name="username" class="form-control" value="<%= @user.username %>">
-    <!-- Input for username end -->
   </div>
-  <!-- Label and input for username end -->
 
-  <!-- Label and input for email start -->
   <div class="form-group">
     <label for="email">
       Email
     </label>
 
-    <!-- Input for email start -->
     <input type="text" id="email" name="email" class="form-control" value="<%= @user.email %>">
-    <!-- Input for email end -->
   </div>
-  <!-- Label and input for email end -->
 
   <button class="btn btn-block btn-outline-secondary">
     Update user
